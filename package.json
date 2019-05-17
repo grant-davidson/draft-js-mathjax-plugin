@@ -10,11 +10,15 @@
     {
       "name": "Andrew Wangsanata",
       "email": "andrew@mathsnoproblem.co.uk"
+    },
+	{
+      "name": "Grant Davidson",
+      "email": "grant@davidsonclan.co.nz"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maths-no-problem/draft-js-mathjax-plugin"
+    "url": "https://github.com/grant-davidson/draft-js-mathjax-plugin"
   },
   "main": "lib/index.js",
   "keywords": [
