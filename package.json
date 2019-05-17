@@ -6,7 +6,7 @@
     "name": "Etienne Florent",
     "url": "https://github.com/efloti"
   },
-  "contributors":[
+  "contributors": [
     {
       "name": "Andrew Wangsanata",
       "email": "andrew@mathsnoproblem.co.uk"
@@ -39,7 +39,7 @@
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "yarn clean && yarn build:js",
-    "build:js": "BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production babel --out-dir='lib' --ignore='__test__/*' src",
+    "build:js": "cross-env BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production babel --out-dir='lib' --ignore='__test__/*' src",
     "lint": "eslint 'src/*.js' 'src/**/*.js'; exit 0",
     "prepublishOnly": "yarn build"
   },
@@ -50,6 +50,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
+    "cross-env": "^5.2.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
