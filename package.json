@@ -37,7 +37,7 @@
     "immutable": "^3.8.1"
   },
   "scripts": {
-    "clean": "rm -rf ./lib",
+    "clean": "rimraf ./lib",
     "build": "yarn clean && yarn build:js",
     "build:js": "cross-env BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production babel --out-dir='lib' --ignore='__test__/*' src",
     "lint": "eslint 'src/*.js' 'src/**/*.js'; exit 0",
@@ -55,6 +55,7 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "rimraf": "^2.6.3"
   }
 }
